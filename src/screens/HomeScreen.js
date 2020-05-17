@@ -1,12 +1,14 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
+const emoji = require("emoji-dictionary");
 
 const HomeScreen = ({ navigation }) => {
 
 
   return (
     <View>
-      <Text style={styles.textStyle}>I like React-Native</Text>
+      <Text style={styles.textStyle}>I {emoji.getUnicode("heart")
+      } React-Native</Text>
       <Button
         onPress={() => {
           navigation.navigate('Components')
@@ -43,13 +45,19 @@ const HomeScreen = ({ navigation }) => {
         }}
         title="Change Color"
       />
+      <Button
+        onPress={() => {
+          navigation.navigate('TextScreen')
+        }}
+        title="Text Screen"
+      />
     </View>
   )
 };
 
 const styles = StyleSheet.create({
   textStyle: {
-    backgroundColor: 'red',
+    backgroundColor: 'pink',
     fontSize: 30,
     padding: 20,
   }
