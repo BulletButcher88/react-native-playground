@@ -19,11 +19,12 @@ const BoxScreen = () => {
 
 const styles = StyleSheet.create({
   text1: {
-    left: 30,
-    top: 200,
+    width: 130,
+    left: 100,
+    top: 140,
     alignSelf: 'flex-start',
     fontStyle: 'italic',
-    fontSize: 60,
+    fontSize: 20,
     color: 'orange',
     borderWidth: 10,
     borderColor: `rgb(${100}, ${230}, ${230})`,
@@ -31,22 +32,22 @@ const styles = StyleSheet.create({
   text2: {
     alignSelf: 'flex-end',
     position: 'absolute',
-    bottom: 200,
     fontStyle: 'italic',
-    fontSize: 60,
+    fontSize: 20,
     color: 'orange',
-    borderWidth: 10,
+    borderWidth: 20,
     borderColor: `rgb(${100}, ${230}, ${230})`,
   },
   text3: {
-    fontStyle: 'italic',
-    fontSize: 60,
+    left: 0,
+    position: 'absolute',
+    width: 130,
+    fontSize: 20,
     color: 'orange',
-    borderWidth: 10,
+    borderWidth: 30,
     borderColor: `rgb(${100}, ${230}, ${230})`,
   },
   viewStyle: {
-    borderWidth: 20,
     borderColor: 'green',
     alignItems: `stretch`,
     ...StyleSheet.absoluteFillObject
